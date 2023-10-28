@@ -183,6 +183,17 @@ contexts:
             - include: code
 
   method-foreign:
+    - match: '\b(foreign)\s+\['
+      scope: punctuation.section.brackets.begin.wren
+      captures:
+        1: storage.modifier.wren
+      push:
+        - meta_scope: meta.method.wren
+        - match: '\n'
+          pop: true
+        - include: comment
+        - match: '\]'
+          scope: punctuation.section.brackets.end.wren
     - match: '\b(foreign)\s+(?:\b(construct|static)\s+)?(\w+=|\w+|\+|-|\*|\/|%|<=?|>=?|==|!=?|&|\||~)'
       captures:
         1: storage.modifier.wren

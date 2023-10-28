@@ -1,1 +1,1 @@
-{"sublime_text": ">=3000", "platforms": ["*"], "version": "1.00.0", "dependencies": [], "description": "Syntax highlighting for the Wren language.", "url": "https://www.wren.io"}
+{"sublime_text": ">=3000", "platforms": ["*"], "version": "1.00.1", "dependencies": [], "description": "Syntax highlighting for the Wren language.", "url": "https://www.wren.io"}
