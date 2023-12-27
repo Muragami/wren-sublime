@@ -154,7 +154,7 @@ contexts:
   method:
     - match: '\['
       scope: punctuation.section.brackets.begin.wren
-    - match: '(?:\b(construct|static)\s+)?(\w+=|\w+(,\s*\w+)*|\w+|\+|-|\*|\/|%|<=?|>=?|==|!=?|&|\||~)'
+    - match: '(?:\b(construct|static)\s+)?(\w+=|\w+(,\s*\w+)*|\w+|\+|\^|-|\*|\/|%|<=?|>=?|==|!=?|&|\||~|<<|>>)'
       captures:
         1: storage.modifier.wren
         2: entity.name.function.wren
@@ -194,7 +194,7 @@ contexts:
         - include: comment
         - match: '\]'
           scope: punctuation.section.brackets.end.wren
-    - match: '\b(foreign)\s+(?:\b(construct|static)\s+)?(\w+=|\w+|\+|-|\*|\/|%|<=?|>=?|==|!=?|&|\||~)'
+    - match: '\b(foreign)\s+(?:\b(construct|static)\s+)?(\w+=|\w+|\+|\^|-|\*|\/|%|<=?|>=?|==|!=?|&|\||~|<<|>>)'
       captures:
         1: storage.modifier.wren
         2: storage.modifier.wren
